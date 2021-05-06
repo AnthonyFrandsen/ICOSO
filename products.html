@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!-- Anthony Frandsen -->
+<!-- May 7, 2021 -->
+<!-- Final Project -->
+<!-- 
+    Create a web site for a business (real or made-up) with at least 3 pages, using HTML5, and separate files for CSS, and JS files.
+
+    Have images, tables, forms  hyperlinks to email, other website, and any other connection that is appropriate. Animation is optional.
+
+    In the JavaScript file use functions.
+-->
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <!--This line prevents mobile devices from automatically shrinking content to allow the page to fit the screen. Mobile layout is designed through css instead.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Page title-->
+        <title>ICOSO &mdash; Customized Tabletop Dice</title>
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pros&family=Poppins&display=swap" rel="stylesheet">
+
+        <!--Site style sheet-->
+        <link rel="stylesheet" type="text/css" href="style/icoso.css">
+
+        <!--External social media icon style sheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Javascript for mobile menu button-->
+        <script src="script/mobile-button.js"></script>
+    </head>
+
+    <body>
+        <div class="content">
+            <header>
+                <div class="topbanner">
+                    <nav class="desktop-menu">
+                        <ul class="left-aligned">
+                            <a href="index.html"><li>ICOSO</li></a>
+                            <li class="logo"><img src="img/logo.png" alt="Icoso" height="60" width="60"/></li>
+                            <a href="customizer.html"><li>Customize</li></a>
+                            <a href="products.html"><li>Products</li></a>
+                            <a href="commission.html"><li>Commission</li></a>
+                            <a href="about.html"><li>About</li></a>
+                        </ul>
+                        <ul class="right-aligned">
+                            <a href="https://www.facebook.com"><li><p class="fa fa-facebook"></p></li></a>
+                            <a href="https://www.twitter.com"><li><p class="fa fa-twitter"></p></li></a>
+                            <a href="https://www.tumblr.com"><li><p class="fa fa-tumblr"></p></li></a>
+                            <a href="https://www.reddit.com"><li><p class="fa fa-reddit-alien"></p></li></a>
+                        </ul>
+                    </nav>
+                    <nav class="mobile-menu">
+                        <ul class="left-aligned">
+                            <a href="index.html"><li>ICOSO</li></a>
+                            <li class="logo"><img src="img/logo.png" alt="Icoso" height="60" width="60"/></li>
+                        </ul>
+                        <ul class="right-aligned">
+                            <div id="mobile-button"><li><p class="fa fa-bars"></p></li></div>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="right-aligned">
+                    <ul id="mobile-links" class="mobile-links">
+                        <a href="customizer.html"><li>Customize</li></a>
+                        <a href="products.html"><li>Products</li></a>
+                        <a href="commission.html"><li>Commission</li></a>
+                        <a href="about.html"><li>About</li></a>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="article-banner" style="background-image: url(img/white-dice.jpg);">
+                    <div class="article-banner-text-wrapper center-aligned">
+                        <div class="article-banner-text">
+                            <h1>Products</h1>
+                            <p>At this time we have no products available for sale.</p>
+                            <p>Please check back later for the official launch of our website.</p>
+                            <a href="index.html"><div class="hyperlink-box">Go back</div></a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="bottom-banner">
+                    <nav class="center-aligned">
+                        <ul class="center-aligned">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="mailto:anthonyfrandsen@gmail.com">Contact </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

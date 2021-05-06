@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- Anthony Frandsen -->
+<!-- May 7, 2021 -->
+<!-- Final Project -->
+<!-- 
+    Create a web site for a business (real or made-up) with at least 3 pages, using HTML5, and separate files for CSS, and JS files.
+
+    Have images, tables, forms  hyperlinks to email, other website, and any other connection that is appropriate. Animation is optional.
+
+    In the JavaScript file use functions.
+-->
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <!--This line prevents mobile devices from automatically shrinking content to allow the page to fit the screen. Mobile layout is designed through css instead.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Page title-->
+        <title>ICOSO &mdash; Customized Tabletop Dice</title>
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pros&family=Poppins&display=swap" rel="stylesheet">
+
+        <!--Site style sheet-->
+        <link rel="stylesheet" type="text/css" href="style/icoso.css">
+        <link rel="stylesheet" type="text/css" href="style/form.css">
+
+
+        <!--External social media icon style sheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Javascript for mobile menu button-->
+        <script src="script/mobile-button.js"></script>
+    </head>
+
+    <body>
+        <div class="content">
+            <header>
+                <div class="topbanner">
+                    <nav class="desktop-menu">
+                        <ul class="left-aligned">
+                            <a href="index.html"><li>ICOSO</li></a>
+                            <li class="logo"><img src="img/logo.png" alt="Icoso" height="60" width="60"/></li>
+                            <a href="customizer.html"><li>Customize</li></a>
+                            <a href="products.html"><li>Products</li></a>
+                            <a href="commission.html"><li>Commission</li></a>
+                            <a href="about.html"><li>About</li></a>
+                        </ul>
+                        <ul class="right-aligned">
+                            <a href="https://www.facebook.com"><li><p class="fa fa-facebook"></p></li></a>
+                            <a href="https://www.twitter.com"><li><p class="fa fa-twitter"></p></li></a>
+                            <a href="https://www.tumblr.com"><li><p class="fa fa-tumblr"></p></li></a>
+                            <a href="https://www.reddit.com"><li><p class="fa fa-reddit-alien"></p></li></a>
+                        </ul>
+                    </nav>
+                    <nav class="mobile-menu">
+                        <ul class="left-aligned">
+                            <a href="index.html"><li>ICOSO</li></a>
+                            <li class="logo"><img src="img/logo.png" alt="Icoso" height="60" width="60"/></li>
+                        </ul>
+                        <ul class="right-aligned">
+                            <div id="mobile-button"><li><p class="fa fa-bars"></p></li></div>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="right-aligned">
+                    <ul id="mobile-links" class="mobile-links">
+                        <a href="customizer.html"><li>Customize</li></a>
+                        <a href="products.html"><li>Products</li></a>
+                        <a href="commission.html"><li>Commission</li></a>
+                        <a href="about.html"><li>About</li></a>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="article-banner" style="background-image: url(img/table-top.jpg);">
+                    <div class="article-banner-text-wrapper center-aligned">
+                        <div class="article-banner-text">
+                            <h1>Commissions</h1>
+                            <p>We understand that the desire for the perfect dice can lead to dissatisfaction with any out-of-the-box solution. Our customizer offers many solutions that mass-produced dice just don't offer, but if your idea can't be created through our customizer service, we'll happily take a commission to make your perfect dice.</p>
+                            <p>Please leave your name, email address, and description of your commission request and we will contact you for further details and pricing.</p>
+                            <form autocomplete="on">
+                                <p><label for="firstname">First name:</label></p>
+                                <p><input type="text" id="firstname" name="firstname"></p>
+                                <p><label for="lastname">Last name:</label></p>
+                                <p><input type="text" id="lastname" name="lastname"></p>
+                                <p><label for="email">Email:</label></p>
+                                <p><input type="text" id="email" name="email"></p>
+                                <p><label for="commission-details">Idea:</label></p>
+                                <p><textarea name="commission-details"></textarea></p>
+                                <p><button type="submit">Submit</button></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="bottom-banner">
+                    <nav class="center-aligned">
+                        <ul class="center-aligned">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="mailto:anthonyfrandsen@gmail.com">Contact </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

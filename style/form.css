@@ -1,0 +1,58 @@
+form table tr td{
+    vertical-align: top;
+    width: min(60%, 15em);
+}
+
+form table tr td:first-child{
+    text-align: right;
+    vertical-align: top;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+form input, textarea, button{
+    font-family: inherit;
+    font-size: inherit;
+    box-sizing: border-box;
+}
+
+form textarea{
+    width: 100%;
+    height: 14em;
+    resize: vertical;
+}
+
+form input, textarea{
+    background: transparent;
+    border: 3px solid rgb(245,222,179);
+    color: rgb(245,222,179);
+    margin-bottom: 15px;
+}
+
+form button{
+    position: relative;
+    border: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 125%;
+    background: rgba(255, 230, 193, .6);
+    color: #000;
+    padding: 0px 15px;
+    transition: .25s ease-in-out;
+}
+form button:hover{
+    background:rgb(255, 207, 134);
+}
+form button:hover:after{
+    border-left-color:rgb(255, 207, 134);
+}
+form button:after{
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid rgba(255, 230, 193, .6);
+    content: '';
+    position: absolute;
+    left: 100%;
+    transition: .25s ease-in-out;
+}
